@@ -1,7 +1,3 @@
-
-![Logo](https://github.com/ChristopherVelasco03/BilletAI/blob/main/assets/155390541/bd77d64f-13b4-46ce-8b19-b1aa6458f124.png){:height="100px" width="100px"}
-
-
 # BilletAI: Reconocimiento de Billetes para Personas con Discapacidad Visual 🎉👁️💵📱🔊
 
 Este proyecto tiene como objetivo principal desarrollar una aplicación web innovadora destinada a asistir a personas con discapacidad visual en la identificación de billetes. A través de la integración de tecnologías como Teachable Machine, TensorFlow, Bootstrap, CSS, HTML, React y FastAPI, se busca proporcionar una solución accesible y efectiva para mejorar la independencia y autonomía de los usuarios en la vida diaria.
