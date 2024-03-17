@@ -17,7 +17,7 @@ El Identificador de Billetes para Personas con Discapacidad Visual es una aplica
 - **FastAPI**: Este framework se utiliza para la creación de una API rápida y eficiente que gestiona las solicitudes de los usuarios y la comunicación con el modelo de clasificación de imágenes.
 
 ## Funcionalidades Clave 🔑
-- **Control de Acceso con Identificación de Usuario (Log In): Los usuarios deben iniciar sesión para acceder a la funcionalidad completa de la aplicación, lo que garantiza la seguridad y la privacidad de los datos.
+- **Control de Acceso con Identificación de Usuario (Log In)**: Los usuarios deben iniciar sesión para acceder a la funcionalidad completa de la aplicación, lo que garantiza la seguridad y la privacidad de los datos.
 
 - **Identificación de Billetes**: Los usuarios pueden cargar imágenes de billetes a través de la interfaz de la aplicación y recibir de manera instantánea la denominación del billete identificado.
 
