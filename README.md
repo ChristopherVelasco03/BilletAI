@@ -1,5 +1,5 @@
 
-![Logo](https://github.com/ChristopherVelasco03/BilletAI/blob/main/assets/155390541/bd77d64f-13b4-46ce-8b19-b1aa6458f124.png){:height="10px" width="10px"}
+![Logo](https://github.com/ChristopherVelasco03/BilletAI/blob/main/assets/155390541/bd77d64f-13b4-46ce-8b19-b1aa6458f124.png){:height="100px" width="100px"}
 
 
 # BilletAI: Reconocimiento de Billetes para Personas con Discapacidad Visual 🎉👁️💵📱🔊
