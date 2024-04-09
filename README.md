@@ -55,3 +55,8 @@ Algunas Capturas:
 ## Interfaz Principal
 ![image](https://github.com/ChristopherVelasco03/BilletAI/assets/155390541/7735d332-bce2-408a-8388-3a7cc106d4d4)
 
+## $20 
+![image](https://github.com/ChristopherVelasco03/BilletAI/assets/155390541/71f12a53-16a3-4b49-9bff-d623b3be5968)
+
+## $50
+![image](https://github.com/ChristopherVelasco03/BilletAI/assets/155390541/f85b83e6-6cee-4499-bc16-ce39ab578269)
