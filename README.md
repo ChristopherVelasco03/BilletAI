@@ -2,7 +2,7 @@ Link: https://registrologinbilletai-production.up.railway.app/login.html
 
 # BilletAI: Reconocimiento de Billetes para Personas con Discapacidad Visual 🎉👁️💵📱🔊
 
-Este proyecto tiene como objetivo principal desarrollar una aplicación web innovadora destinada a asistir a personas con discapacidad visual en la identificación de billetes. A través de la integración de tecnologías como Teachable Machine, TensorFlow, Bootstrap, CSS, HTML, React y FastAPI, se busca proporcionar una solución accesible y efectiva para mejorar la independencia y autonomía de los usuarios en la vida diaria.
+Este proyecto tiene como objetivo principal desarrollar una aplicación web innovadora destinada a asistir a personas con discapacidad visual en la identificación de billetes. A través de la integración de tecnologías como Teachable Machine, TensorFlow, Bootstrap, CSS, HTML, MySQL y FastAPI, se busca proporcionar una solución accesible y efectiva para mejorar la independencia y autonomía de los usuarios en la vida diaria.
 
 ## Descripción del Proyecto 📝
 
@@ -13,8 +13,6 @@ El Identificador de Billetes para Personas con Discapacidad Visual es una aplica
 - **Teachable Machine**: Esta herramienta, basada en TensorFlow, permite entrenar modelos de aprendizaje automático con facilidad utilizando datos de entrada proporcionados por el usuario.
 
 - **Bootstrap, CSS y HTML**: Estos frameworks se utilizan para el diseño y la estructura visual de la aplicación web, asegurando una experiencia de usuario intuitiva y accesible.
-
-- **React**: Se emplea para el desarrollo de la interfaz de usuario interactiva y dinámica, facilitando la navegación y la interacción con la aplicación.
 
 - **FastAPI**: Este framework se utiliza para la creación de una API rápida y eficiente que gestiona las solicitudes de los usuarios y la comunicación con el modelo de clasificación de imágenes.
 
