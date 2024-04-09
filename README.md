@@ -29,22 +29,29 @@ El Identificador de Billetes para Personas con Discapacidad Visual es una aplica
 
 ## Instalación y Uso 🚀
 
-1. Clona el repositorio desde GitHub: `git clone https://github.com/tu-usuario/tu-repositorio.git`
+1. Clona el repositorio desde GitHub: `git clone https://github.com/ChristopherVelasco03/BilletAI`
 2. Navega al directorio del proyecto: `cd tu-proyecto`
-3. Instala las dependencias necesarias: `npm install`
-4. Inicia la aplicación: `npm start`
+3. Instala en VsCode Live Server.
+4. Inicia la aplicación con clic derecho y en la opción de Open With Live Server.
 5. Accede a la aplicación desde tu navegador web: `http://localhost:3000`
 
 ## Contribución 🤝
 
 ¡Las contribuciones son bienvenidas! Si deseas mejorar esta aplicación o agregar nuevas características, no dudes en abrir un issue o enviar un pull request en GitHub.
 
-## Licencia 📜
-
-Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo LICENSE.
-
 ## Contacto 📧
 
 Para cualquier consulta o sugerencia, no dudes en ponerte en contacto con el equipo de desarrollo a través de correo electrónico: [christopher.velasco2003@gmail.com](mailto:christopher.velasco2003@gmail.com).
 
 ¡Gracias por tu interés en nuestro proyecto! Esperamos que esta aplicación pueda hacer una diferencia positiva en la vida de las personas con discapacidad visual.
+
+Algunas Capturas:
+## Registro 
+![image](https://github.com/ChristopherVelasco03/BilletAI/assets/155390541/ff70c3db-3965-4523-a0ba-6245bb28dcae)
+
+## Login
+![image](https://github.com/ChristopherVelasco03/BilletAI/assets/155390541/902db4eb-3008-445c-922f-da492332616a)
+
+## Interfaz Principal
+![image](https://github.com/ChristopherVelasco03/BilletAI/assets/155390541/7735d332-bce2-408a-8388-3a7cc106d4d4)
+
