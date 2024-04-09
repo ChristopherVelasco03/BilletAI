@@ -49,10 +49,9 @@ Algunas Capturas:
 ## Registro 
 ![image](https://github.com/ChristopherVelasco03/BilletAI/assets/155390541/ff70c3db-3965-4523-a0ba-6245bb28dcae){width=300px}
 
-
 ## Login
-![image](https://github.com/ChristopherVelasco03/BilletAI/assets/155390541/902db4eb-3008-445c-922f-da492332616a){width=300px}
+![image](https://github.com/ChristopherVelasco03/BilletAI/assets/155390541/902db4eb-3008-445c-922f-da492332616a)
 
 ## Interfaz Principal
-![image](https://github.com/ChristopherVelasco03/BilletAI/assets/155390541/7735d332-bce2-408a-8388-3a7cc106d4d4){width=300px}
+![image](https://github.com/ChristopherVelasco03/BilletAI/assets/155390541/7735d332-bce2-408a-8388-3a7cc106d4d4)
 
