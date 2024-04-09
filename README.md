@@ -56,7 +56,8 @@ Algunas Capturas:
 ![image](https://github.com/ChristopherVelasco03/BilletAI/assets/155390541/7735d332-bce2-408a-8388-3a7cc106d4d4)
 
 ## $20 
-![image](https://github.com/ChristopherVelasco03/BilletAI/assets/155390541/71f12a53-16a3-4b49-9bff-d623b3be5968)
+![image](https://github.com/ChristopherVelasco03/BilletAI/assets/155390541/45203a0c-f89a-44fd-990a-22d4ee5af44c)
 
 ## $50
-![image](https://github.com/ChristopherVelasco03/BilletAI/assets/155390541/f85b83e6-6cee-4499-bc16-ce39ab578269)
+![image](https://github.com/ChristopherVelasco03/BilletAI/assets/155390541/4450465a-3d02-4b9b-bec4-d204204fb0a0)
+
