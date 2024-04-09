@@ -72,7 +72,7 @@
       } else {
         facingMode = "user"; // switch to front camera
       }
-      await webcam.flip(false);
+      await webcam.flip();
       webcam.stop();
       await webcam.setup({ facingMode: facingMode });
       await webcam.play();
