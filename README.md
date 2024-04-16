@@ -47,10 +47,10 @@ Para cualquier consulta o sugerencia, no dudes en ponerte en contacto con el equ
 
 Algunas Capturas:
 ## Registro 
-![image](https://github.com/ChristopherVelasco03/BilletAI/assets/155390541/ff70c3db-3965-4523-a0ba-6245bb28dcae)
+![image](https://github.com/ChristopherVelasco03/BilletAI/assets/155390541/bdf6cadb-6b34-4c36-9855-33db07261968)
 
 ## Login
-![image](https://github.com/ChristopherVelasco03/BilletAI/assets/155390541/902db4eb-3008-445c-922f-da492332616a)
+![image](https://github.com/ChristopherVelasco03/BilletAI/assets/155390541/209cd769-38c5-4e8d-9349-9edbc1b27a54)
 
 ## Interfaz Principal
 ![image](https://github.com/ChristopherVelasco03/BilletAI/assets/155390541/7735d332-bce2-408a-8388-3a7cc106d4d4)
