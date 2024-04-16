@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BilletAI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="box">
+        <span class="borderLine"></span>
+        <form id="registrationForm">
+            <h2>Registro</h2>
+            <div class="inputBox">
+                <input type="text" id="fullName" required="required">
+                <span>Nombre</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="email" id="email" required="required">
+                <span>Correo</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" id="password" required="required">
+                <span>Contraseña</span>
+                <i></i>
+            </div>
+            <div class="links">
+                <a href="login.html">¿Ya tienes cuenta?</a>
+            </div>
+            <input type="submit" value="Registro">
+        </form>
+    </div>
+
+    <script>
+        const registrationForm = document.getElementById('registrationForm');
+
+        registrationForm.addEventListener('submit', (event) => {
+            event.preventDefault(); // Evitar envío por defecto del formulario
+
+            const fullName = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            const data = {
+                email: email,
+                password: password,
+                full_name: fullName,
+            };
+
+            fetch('https://v1-default--production-omaralvrz.sierranegra.cloud/users/', {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => {
+                if (!response.ok) {
+                    if (response.status === 400) {
+                        throw new Error('Correo electrónico ya registrado');
+                    } else {
+                        throw new Error('Error en la solicitud');
+                    }
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Success:', data);
+                alert("¡Registrado con éxito!");
+                window.location.href = "login.html"; // Redireccionar a la página de inicio de sesión
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert("Error: " + error.message);
+            });
+        });
+    </script>
+</body>
+</html>

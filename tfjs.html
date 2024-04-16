@@ -3,71 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teachable Machine Image Model</title>
-  <link rel="stylesheet" href="style.css">
-
-<div>Teachable Machine Image Model</div>
-<button type="button" onclick="init()">Start</button>
-<div id="webcam-container"></div>
-<div id="label-container"></div>
-<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
-<script type="text/javascript">
-  // More API functions here:
-  // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
-
-  // The link to your model provided by Teachable Machine export panel
-  const URL = "https://teachablemachine.withgoogle.com/models/Dxx2DLOb2/";
-
-  let model, webcam, labelContainer, maxPredictions;
-
-  // Load the image model and setup the webcam
-  async function init() {
-    const modelURL = URL + "model.json";
-    const metadataURL = URL + "metadata.json";
-
-    // Load the model and metadata
-    // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
-    // or files from your local hard drive
-    // Note: the pose library adds "tmImage" object to your window (window.tmImage)
-    model = await tmImage.load(modelURL, metadataURL);
-    maxPredictions = model.getTotalClasses();
-
-    // Convenience function to setup a webcam
-    const flip = true; // whether to flip the webcam
-    webcam = new tmImage.Webcam(200, 200, flip); // width, height, flip
-    await webcam.setup(); // request access to the webcam
-    await webcam.play();
-    window.requestAnimationFrame(loop);
-
-    // Append elements to the DOM
-    document.getElementById("webcam-container").appendChild(webcam.canvas);
-    labelContainer = document.getElementById("label-container");
+  <title>BilletAI</title>
+  <link rel="stylesheet" href="style-noreact.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <style>
+     body {
+    background-color: #171941; /* Color de fondo nuevo*/
+    background-image: radial-gradient(circle, #cccccc42 1px, transparent 1px); /* Patrón de puntos grises */
+    background-size: 20px 20px; /* Tamaño del patrón de puntos */
   }
+  </style>
+</head>
+<body>
+  <!-- Aquí están los cuadrados animados -->
+  <div class="index-page">
+    <div class="squares square1"></div>
+    <div class="squares square2"></div>
+    <div class="squares square3"></div>
+    <div class="squares square4"></div>
+    <div class="squares square5"></div>
+    <div class="squares square6"></div>
+    <div class="squares square7"></div>
+    <div class="squares square8"></div>
+    <div class="squares square9"></div>
+    <div class="squares square10"></div>
+    <div class="squares square11"></div>
+  </div>
 
-  async function loop() {
-    webcam.update(); // update the webcam frame
-    await predict();
-    window.requestAnimationFrame(loop);
-  }
 
-  // Run the webcam image through the image model
-  async function predict() {
-    // Predict can take in an image, video, or canvas HTML element
-    const prediction = await model.predict(webcam.canvas);
+  
+  <div class="box">
+    <h2>Escanee sus billetes</h2>
+  
+    <div class="botones">
+        <button id="startButton" type="button" class="btn btn-outline-light" onclick="init()">Iniciar Cámara</button>
+        <button id="flipButton" type="button" class="btn btn-outline-light" onclick="flipCamera()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone-flip" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M11 1H5a1 1 0 0 0-1 1v6a.5.5 0 0 1-1 0V2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v6a.5.5 0 0 1-1 0V2a1 1 0 0 0-1-1m1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a.5.5 0 0 0-1 0v2a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-2a.5.5 0 0 0-1 0zM1.713 7.954a.5.5 0 1 0-.419-.908c-.347.16-.654.348-.882.57C.184 7.842 0 8.139 0 8.5c0 .546.408.94.823 1.201.44.278 1.043.51 1.745.696C3.978 10.773 5.898 11 8 11q.148 0 .294-.002l-1.148 1.148a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2a.5.5 0 1 0-.708.708l1.145 1.144L8 10c-2.04 0-3.87-.221-5.174-.569-.656-.175-1.151-.374-1.47-.575C1.012 8.639 1 8.506 1 8.5c0-.003 0-.059.112-.17.115-.112.31-.242.6-.376Zm12.993-.908a.5.5 0 0 0-.419.908c.292.134.486.264.6.377.113.11.113.166.113.169s0 .065-.13.187c-.132.122-.352.26-.677.4-.645.28-1.596.523-2.763.687a.5.5 0 0 0 .14.99c1.212-.17 2.26-.43 3.02-.758.38-.164.713-.357.96-.587.246-.229.45-.537.45-.919 0-.362-.184-.66-.412-.883s-.535-.411-.882-.571M7.5 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1z"/>
+        </svg></button>
+    </div>
+    <div id="webcam-container" class="webcam-container">
+      <!-- Contenedor de la cámara -->
+      <!-- El texto cambiará dentro de aquí -->
+      <div id="label-container" class="label-container">
+  
+      </div>
+  </div>>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+  <script type="text/javascript">
+    // More API functions here:
+    // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
 
-    for (let i = 0; i < maxPredictions; i++) {
-      const classPrediction = prediction[i];
+    // The link to your model provided by Teachable Machine export panel
+    const URL = "https://teachablemachine.withgoogle.com/models/4gav6nPdP/";
 
-      // Check if probability is greater than 50%
-      if (classPrediction.probability > 0.5) {
-        // If so, directly display the predicted class
-        labelContainer.innerHTML = classPrediction.className;
-        break; // Exit after displaying the first class above 50% probability
-      } else {
-        // Otherwise, display "No class detected"
-        labelContainer.innerHTML = "No class detected";
+    let model, webcam, labelContainer, maxPredictions;
+    let facingMode = "user"; 
+
+    // Load the image model and setup the webcam
+    async function init() {
+      const modelURL = URL + "model.json";
+      const metadataURL = URL + "metadata.json";
+
+      // Load the model and metadata
+      // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
+      // or files from your local hard drive
+      // Note: the pose library adds "tmImage" object to your window (window.tmImage)
+      model = await tmImage.load(modelURL, metadataURL);
+      maxPredictions = model.getTotalClasses();
+
+      // Convenience function to setup a webcam
+      const flip = true;
+      webcam = new tmImage.Webcam(400, 400, flip);
+      await webcam.setup({ facingMode: facingMode }); // set initial camera mode
+      await webcam.play();
+      window.requestAnimationFrame(loop);
+
+      // Append elements to the DOM
+      document.getElementById("webcam-container").appendChild(webcam.canvas);
+      labelContainer = document.getElementById("label-container");
+
+      // Disable the button after it's clicked once
+      document.getElementById("startButton").disabled = true;
+    }
+
+    async function loop() {
+      webcam.update(); // update the webcam frame
+      await predict();
+      window.requestAnimationFrame(loop);
+    }
+
+    // Run the webcam image through the image model
+    async function predict() {
+      // Predict can take in an image, video, or canvas HTML element
+      const prediction = await model.predict(webcam.canvas);
+
+      for (let i = 0; i < maxPredictions; i++) {
+        const classPrediction = prediction[i];
+
+        // Check if probability is greater than 50%
+        if (classPrediction.probability > 0.65) {
+          // If so, directly display the predicted class
+          labelContainer.innerHTML = classPrediction.className;
+          break; // Exit after displaying the first class above 50% probability
+        } else {
+          // Otherwise, display "No class detected"
+          labelContainer.innerHTML = "No class detected";
+        }
       }
     }
+    // Function to flip the camera mode (front/back)
+async function flipCamera() {
+  if (facingMode === "user") {
+    facingMode = "environment"; // switch to back camera
+  } else {
+    facingMode = "user"; // switch to front camera
   }
-</script>
+  await webcam.flip();
+  webcam.stop();
+  await webcam.setup({ facingMode: facingMode });
+  await webcam.play();
+}
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/fjalla-one-2');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fjalla One', sans-serif;                  
+}
+
+@keyframes move-left-right {
+    0% {
+      transform: translateX(-10px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(-10px);
+    }
+  }
+.index-page .squares {
+    animation: move-left-right 1s infinite;
+    background: #ba54f5;
+    background: -webkit-linear-gradient(0deg, #ba54f5 0%, #e14eca 100%);
+    background: -o-linear-gradient(0deg, #ba54f5 0%, #e14eca 100%);
+    background: -moz-linear-gradient(0deg, #ba54f5 0%, #e14eca 100%);
+    background: linear-gradient(0deg, #ba54f5 0%, #e14eca 100%);
+    position: absolute;
+    transition: 0.5s ease-out;
+    overflow: hidden;
+    border-radius: 20%;
+    z-index: -1;
+  }
+  
+  .index-page .squares.square1 {
+    animation: move-left-right 4s infinite;
+    height: 300px;
+    width: 300px;
+    opacity: 0.5;
+    left: 3%;
+    top: -21%;
+  }
+  
+  .index-page .squares.square2 {
+    animation: move-left-right 6s infinite;
+    height: 400px;
+    width: 400px;
+    opacity: 0.4;
+    right: -5%;
+    top: -12%;
+  }
+  
+  .index-page .squares.square3 {
+    animation: move-left-right 5s infinite;
+    height: 200px;
+    width: 200px;
+    opacity: 0.1;
+    left: -5%;
+    bottom: 0%;
+  }
+  
+  .index-page .squares.square4 {
+    animation: move-left-right 10s infinite;
+    height: 100px;
+    width: 100px;
+    opacity: 0.9;
+    right: 27%;
+    top: 70%;
+  }
+  
+  .index-page .squares.square5 {
+    animation: move-left-right 6s infinite;
+    height: 250px;
+    width: 250px;
+    opacity: 0.1;
+    left: 32%;
+    bottom: 29%;
+  }
+  
+  .index-page .squares.square6 {
+    animation: move-left-right 9s infinite;
+    left: 10%;
+    top: 35%;
+    height: 80px;
+    width: 80px;
+    opacity: 0.8;
+  }
+  
+  .index-page .squares.square7 {
+    animation: move-left-right 3s infinite;
+    width: 300px;
+    height: 300px;
+    right: -5%;
+    bottom: 0%;
+    opacity: 0.1;
+  }
+
+.index-page .squares.square8 {
+    animation: move-left-right 8s infinite;
+    height: 150px;
+    width: 150px;
+    opacity: 0.7;
+    left: 20%;
+    top: 50%;
+}
+
+.index-page .squares.square9 {
+    animation: move-left-right 7s infinite;
+    height: 180px;
+    width: 180px;
+    opacity: 0.3;
+    right: 15%;
+    bottom: 20%;
+}
+
+.index-page .squares.square10 {
+    animation: move-left-right 5s infinite;
+    height: 120px;
+    width: 120px;
+    opacity: 0.6;
+    left: 60%;
+    top: 25%;
+}
+
+.index-page .squares.square11 {
+    animation: move-left-right 4s infinite;
+    height: 220px;
+    width: 220px;
+    opacity: 0.2;
+    right: 40%;
+    bottom: 40%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.box{
+    position: relative;
+    width: 380px;
+    height: 515px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.box h2{
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-top: 5px;
+}
+
+.box button{
+    color: white; 
+}
+
+.box .botones{
+    display: inline-block;
+    margin-left: 110px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.webcam-container {
+    position: relative;
+}
+
+.label-container {
+    position: absolute;
+    top: 10px; /* Puedes ajustar la posición vertical según tus necesidades */
+    left: 50px; /* Puedes ajustar la posición horizontal según tus necesidades */
+    top: 150px;
+    display: inline-block;
+    font-size: 40px;
+    color: white;
+}
