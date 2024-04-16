@@ -55,9 +55,14 @@ Algunas Capturas:
 ## Interfaz Principal
 ![image](https://github.com/ChristopherVelasco03/BilletAI/assets/155390541/9b755dbf-4021-400a-af54-57c1d1d27a5f)
 
-## $20 
-![image](https://github.com/ChristopherVelasco03/BilletAI/assets/155390541/45203a0c-f89a-44fd-990a-22d4ee5af44c)
+## $100
+![image](https://github.com/ChristopherVelasco03/BilletAI/assets/155390541/59e4c01a-b8be-409d-87ab-2ea2bc105dab)
+
+## $200
+![image](https://github.com/ChristopherVelasco03/BilletAI/assets/155390541/bbf665e2-5f5b-486e-bfb4-b93b1b54fb01)
+
+## $20
+![image](https://github.com/ChristopherVelasco03/BilletAI/assets/155390541/251e013a-a3dd-4514-a986-584420afca3d)
 
 ## $50
-![image](https://github.com/ChristopherVelasco03/BilletAI/assets/155390541/4450465a-3d02-4b9b-bec4-d204204fb0a0)
-
+![image](https://github.com/ChristopherVelasco03/BilletAI/assets/155390541/8a84509b-2309-4700-8b86-4fd6600e787e)
